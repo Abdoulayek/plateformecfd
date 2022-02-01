@@ -44,9 +44,4 @@ class Product{
      */
     private $file;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="Document", inversedBy="files")
-     * @ORM\JoinColumn(name="document_id", referencedColumnName="id")
-     **/
-    private $document;
 }
