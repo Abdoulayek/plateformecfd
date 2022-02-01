@@ -1,0 +1,148 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CFD | Recherche{% endblock %}
+
+{% block body %}
+{% for message in app.flashes('success') %}
+        <div class="flash-notice">
+            {{ message }}
+        </div>
+    {% endfor %}
+<div id="mesrecherches">
+
+<h3 class="titre-apps"> Qualiopi chez CFD pour {{ app.user.usernames }}!</h3>
+
+
+</div>
+
+<div id="contact">
+{{form_start(form)}}
+<FONT face="arial">
+<h1>Critère 1</h1> 
+<div class="form-group">
+        {{ form_row(form.el1, {'label': 'Prénom', 'attr' : {'placeholder' : 'Prénom'}}) }}
+    </div> 
+
+
+ <div class="form-group">
+        {{ form_row(form.Nom, {'label': 'Nom', 'attr' : {'placeholder' : 'Nom'}}) }}
+    </div> 
+
+
+<div class="form-group">
+        {{ form_row(form.Email, {'label': 'Email', 'attr' : {'placeholder' : 'Email'}}) }}
+    </div> 
+
+
+<div class="form-group">
+        {{ form_row(form.Raison_sociale, {'label': 'Raison sociale', 'attr' : {'placeholder' : 'Raison sociale'}}) }}
+    </div> 
+
+
+<div class="form-group">
+        {{ form_row(form.SIRET, {'label': 'SIRET', 'attr' : {'placeholder' : 'SIRET'}}) }}
+    </div> 
+
+
+<div class="form-group">
+        {{ form_row(form.Adresse, {'label': 'Adresse', 'attr' : {'placeholder' : 'Adresse'}}) }}
+    </div> 
+
+
+<div class="form-group">
+        {{ form_row(form.siteweb, {'label': 'Site Web', 'attr' : {'placeholder' : 'Site Web'}}) }}
+    </div> 
+
+<h1>Critère 2</h1> 
+<div class="form-group">
+        {{ form_row(form.dossierdecandidature, {'label': 'Dossier de candidature', 'attr' : {'placeholder' : 'Dossier de candidature'}}) }}
+    </div> 
+
+
+<div class="form-group">
+        {{ form_row(form.element1) }}
+    </div> 
+
+
+<div class="form-group">
+        {{ form_row(form.element2) }}
+    </div> 
+
+
+<div class="form-group">
+        {{ form_row(form.element3) }}
+    </div> 
+
+    <div class="form-group">
+        {{ form_row(form.element5) }}
+    </div> 
+
+<h1>Critère 3</h1> 
+<div class="form-group">
+        {{ form_row(form.element4) }}
+    </div> 
+
+
+
+
+
+<div class="form-group">
+        {{ form_row(form.element6) }}
+    </div> 
+
+
+<h1>Critère 4</h1>
+<div class="form-group">
+        {{ form_row(form.element7) }}
+    </div> 
+
+
+
+<div class="form-group">
+        {{ form_row(form.element8) }}
+    </div> 
+
+<div class="form-group">
+        {{ form_row(form.element9) }}
+    </div> 
+<div class="form-group">
+        {{ form_row(form.element10) }}
+    </div> 
+
+<h1>Critère 5</h1>
+
+
+
+<div class="form-group">
+        {{ form_row(form.element11) }}
+    </div> 
+
+
+<div class="form-group">
+        {{ form_row(form.element12) }}
+    </div> 
+
+<h1>Critère 6</h1>
+<div class="form-group">
+        {{ form_row(form.element13) }}
+    </div> 
+
+<h1>Critère 7</h1>
+<div class="form-group">
+        {{ form_row(form.element14) }}
+    </div> 
+
+
+  <div class="form-group">
+        <button type="submit" class="btn">Envoyer</button>
+    </div>
+</FONT>
+    
+
+
+
+
+{% endblock %}
+
+
+

@@ -1,0 +1,48 @@
+#mesrecherches {
+    margin: auto !important;
+    width: 600px;
+}
+
+#img {
+    margin-top: 20px;
+    display: none;
+}
+
+#info-num-permis {
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 35%;
+    border-left: 2px grey solid;
+    padding-left: 10px;
+}
+
+#mesrecherches h4,
+#mesrecherches h5 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sous-titre-recherche {
+    color: #00ACB0;
+}
+
+#saisie-manuelle {
+    border-top: 3px grey solid;
+    margin-top: 20px;
+}
+
+.info-input-recherche {
+    color: grey;
+    font-size: 0.5em;
+    font-style: italic;
+}
+
+.info-input-recherche:hover {
+    color: green;
+    font-size: 1em;
+    font-style: italic bolder;
+}
+
+.info-input-recherche:hover #img {
+    display: block;
+}

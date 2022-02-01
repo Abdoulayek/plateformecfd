@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vérif'permis | mot de passe oublié{% endblock %}
+
+{% block body %}
+    {% for flashError in app.flashes('reset_password_error') %}
+        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+    {% endfor %}
+    <div class="security">
+    <h1>Mot de passe oublié</h1>
+
+    {{ form_start(requestForm) }}
+    <div class="form-group">
+        {{ form_row(requestForm.email) }}
+    </div>
+        <div class="form-group">
+            <small>
+                Saisissez votre adresse mail pour envoyer le lien pour réinitialiser votre mot de passe
+            </small>
+        </div>
+
+        <center><button class="btn">Envoyer</button></center>
+    {{ form_end(requestForm) }}
+    </div>
+{% endblock %}

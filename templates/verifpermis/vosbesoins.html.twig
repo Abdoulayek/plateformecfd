@@ -1,0 +1,102 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CFD | vos besoins{% endblock %}
+
+{% block body %}
+<style>
+    .title-img{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom:15px;
+}
+
+.info-site-detail > p {
+    margin-top:15px;
+}
+
+/*  Ajout */
+.info-image-vosbesoins{
+    margin-left: 8px;
+}
+
+#im1{
+    width: auto;
+    height : 350px;
+    margin-bottom: 30px;
+} 
+
+
+
+h4{
+    margin-bottom:3px;
+}
+
+#contenu-image {
+    display:flex;
+    flex-direction:row;
+}
+
+.figure-vosbesoins{
+    width: 100px;
+}
+
+.title-vosbesoins{
+    margin-bottom: 5px;
+}
+.saut{
+    font-size: 25px;
+} 
+
+
+</style>
+
+<div>
+<h1>Bienvenue sur la plateforme CFD !</h1>
+<div id="info_vosbesoins" class="info-site">
+<!-- Ajout figure modif-->
+    <figure>
+            <p><img src="/images/cfd.png" id="im1" class="images" style="margin-left:50%" alt=" IstockPhoto"/></p>
+            
+    </figure> 
+
+      
+    <div>
+        <h4 style="text-align:center">Qui sommes-nous?</h4>
+        <br/>
+        
+        <FONT face="arial">
+        <p class="saut">
+        L'organisme CFD tient son expertise de sa fondatrice: Siby KANTE !</p>
+        <br />
+        <p>Entrée dans le monde de la formation, en bénéficiant de celles de grands noms du milieu comme David Laroche, The Family, Stan Leloup, et bien d’autres, elle a pu apprécier le pouvoir et le champ du possible que ce domaine apporte à savoir:
+
+Permettre à tout à chacun d’avoir accès à la connaissance quelques soient ses origines.</p>
+<br />
+
+<p>Et surtout, que toute personne maîtrisant un savoir a la possibilité légale, administrative de le transmettre en recevant en échange une compensation financière.</p>
+<br />
+
+<p>Un parcours scolaire atypique qui s'interrompt sans reconnaissance conventionnelle. Un tempérament opiniâtre qui contourne un système lisse et conforme, et lui permet de faire reconnaître par la formation, des qualités pour cet univers, mais également dans le marketing.</p>
+<br/>
+<p>Matière qu’elle enseignera en école de commerce. Très rapidement, elle se tourne également vers la formation de femmes et hommes, principalement orientés vers l’entrepreneuriat. </p>
+<br/>
+<p>Un univers qu’elle affectionne et dans lequel elle baigne depuis plusieurs années. C'est durant ces belles années, qu'elle a pu observer les fruits des formations qu’elle a transmises. Au travers d’un grand nombre de ses stagiaires qui ont pu évoluer en devenant chefs d’entreprise ou formateurs à leur tour, elle a cerné les enjeux sociaux et sociétaux de l’accès à la formation. </p>
+<br />
+<p>La formation est devenue une véritable passion. C’est donc naturellement qu’elle devient auditrice Qualiopi. Son expertise assise, elle a créé l’organisme CFD . Il accompagne désormais depuis plusieurs années des hommes et des femmes à devenir formateurs indépendants,à créer des organismes de formation, et des entrepreneurs à créer leur pôle de formation. L'Organisme CFD vous accompagne pour gérer votre organisme de formation. 
+</p>
+<br />
+<p>Il vous accompagne à sa certification, à son éligibilité aux différents fonds de financements. Il vous accompagne à devenir un professionnel reconnu de la formation à travers un accompagnement à 360°</p> 
+        
+    </FONT>
+    </div>
+</div>
+</div>
+
+
+
+    <!--Title et Alt sont mit tout les deux en cas de rupture du lien -->
+    <!-- Utile pour le référencement naturel -->
+</div>
+
+{% endblock %}

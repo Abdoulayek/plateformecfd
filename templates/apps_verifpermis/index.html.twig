@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CFD | Recherche{% endblock %}
+
+{% block body %}
+<div id="mesrecherches">
+<h3 class="titre-apps"> CFD & {{ app.user.usernames }} ! </h3>
+
+<div>
+<h1>Vidéo de présentation</h1>
+</div>
+<!--
+<a href="#" class="conne">Je deviens formateur professionnel</a>
+<br />
+<a href="{{ path('qualiocompte') }}" class="conne">Je m'inscris sur la plateforme Dokelio / Kairos</a>
+<br />
+<a href="{{ path('qualiocompte') }}" class="conne">Je donne une identité visuelle à mon organisme</a>
+</div>
+!-->
+<div class="autresf">
+<FONT face="arial">
+<p>Chez CFD, nous vous accompagnons également dans le développement personnel de votre organisme.</p>
+<p>Avec CFD, nous vous permettrons d'etre formateur professionnel ou de gagner en autonomie en formation !</p>
+<p>CFD donne une identité visuelle à votre organisme de formation (Site Web/ Application Web/ Logos & Slogan)</p>
+<p>Chez CFD, nous effectuons pour vous toutes les démarches nécessaires à votre inscription sur Pole Emploi !</p>
+<p class="sav"><a href="mailto:organismecfd@gmail.com">En savoir plus</a></p>
+</FONT>
+</div>
+
+<!-- <form>
+    <div id="import-excel">
+    <h4 class="sous-titre-recherche">Importation des documents</h4>
+    <div class="form-group">
+        <input type="file" name="fic_excel" id="fic_excel"/>
+    <small class="info-input-recherche"><i class="fas fa-info-circle"></i> Importer vos fichiers pour la prestation</small>
+<p><a href="/fichiers/modele_fichier_excel.xlsx">Telecharger un modèle</a></p>
+<p>
+    <img id="img" src="/images/excel.png" alt="exemple en image" />
+</p>
+</div>
+</div><!-- end div import-excel --> 
+<!--<div id="saisie-manuelle">
+    <h4 class="sous-titre-recherche">Saisie manuelle des informations de votre entreprise</h4>
+    
+            <div class="form-group">
+                <h5>Insérer les n° des autres documents que vous voulez nous transmettre</h5>
+                
+            </div>
+            <div v-for="item in tab">
+                <div class="form-group">
+                    <label :for="item.name">Document n° {% verbatim %}{{ item.value }}{% endverbatim %} </label>
+                    <input type="number" :name="item.name" :id="item.name" />
+                    <small class="info-input-recherche"><i class="fas fa-info-circle"></i> Veuillez saisir le numéro d'identification du document</small>
+                </div>
+            </div>
+    <!-- bouton ajouter -->
+    <!--        <div class="form-group">
+        <label>Continuer l'insertion </label>
+        <div style="display: flex; flex-direction: row;"><input type="number" min="1" name="addinsert" id="adinsert" v-model="nbrpermis" />
+        <div class="btn-add" @click="addinsert()"><i class="fas fa-plus"></i></div></div>
+            </div>            
+    
+</div> <!-- end div sasie-manuelle -->
+
+<!-- <div class="form-group">
+<a href="{{ path('apps_verifpermis_resultat') }}" class="btn">Valider</a>
+</div>
+
+</form>
+</div> 
+!-->
+
+<!-- <li class="nav-item">
+                                <a class="nav-link {{ navactivecompte }}" href="{{ path('qualiocompte') }}">Prestation Qualiopi
+                            </a>
+                            </li>
+
+                    
+
+                            <li class="nav-item">
+                                <a class="nav-link {{ navactivecompte }}" href="{{ path('apps_verifpermis_home') }}">Annuaire Edof
+                            </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link {{ navactivecompte }}" href="{{ path('apps_verifpermis_home') }}">Pole Emploi
+                            </a>
+                            </li>
+        
+        
+                            <li class="nav-item {{ navactivenouscontacter }}">
+                                <a class="nav-link" href="mailto:organismecfd@gmail.com">Nous contacter</a>
+                            </li>
+  --!>
+
+
+{% endblock %}
+
+
+

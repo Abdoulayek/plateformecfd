@@ -1,0 +1,9 @@
+#moncompte {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    background: rgb(239, 240, 240);
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(28, 78, 94);
+}

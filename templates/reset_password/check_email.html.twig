@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vérif'permis | mot de passe oublié{% endblock %}
+
+{% block body %}
+    <h1>Mot de passe oublié</h1>
+    <p>
+        S'il existe un compte correspondant à votre e-mail, un email vient d'être envoyé contenant un lien que vous pouvez utiliser pour réinitialiser votre mot de passe. Ce lien expirera dans  {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
+    </p>
+    
+    <p>Si vous ne recevez pas d'email, veuillez vérifier votre dossier spam ou <a href="{{ path('app_forgot_password_request') }}" style="color:green;">Réessayer</a>.</p>
+{% endblock %}

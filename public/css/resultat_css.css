@@ -1,0 +1,28 @@
+table {
+    color: black;
+}
+
+thead {
+    background-color: rgb(225, 241, 245);
+    color: #00ACB0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+tr,
+td,
+th {
+    border: 2px #00ACB0 solid;
+    padding: 5px;
+}
+
+.resultsmall {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+#erreur {
+    color: red;
+    font-size: 1.2em;
+    margin-top: 30px;
+}

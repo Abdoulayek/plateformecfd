@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %} 
+
+
+
+{% block body %} 
+
+<h1>Envoyez-nous vos documents !</h1>
+<div id="d1">
+ <div class="d11">
+       {{ form_start(form) }}
+        {{ form_widget(form) }}
+         {{ form_end(form) }}
+
+</div>
+
+<div class="d12">
+<ul>Liste des documents à joindre : 
+<li>Fiche d'évaluation</li>
+<li>Contrat/Convention</li>
+<li>Expliquer votre protocole d’objectifs évaluables</li>
+<li>Feuille d'émargement par demi-journée</li>
+<li>Expliquer votre processus de formation</li>
+<li>Examen final</li>
+<li>CV</li>
+<li>DUERP - SI + 1 SALARIÉ</li>
+<li>Liste des moyens techniques</li>
+<li>Organigramme</li>
+<li>Fiche de poste</li>
+<li>Coordination des acteurs</li>
+<li>Livret de cours</li>
+<li>Attestation/Certificat de formation</li>
+<li>Questionnaire de satisfaction des employés</li>
+<li>Contrat de prestation</li>
+<li>Contrat des employés</li>
+<li>Recueil, analyse et traitement des appréciations des parties prenantes</li>
+<li>Expliquez-nous les choses mis en place dans votre organisme de formation en vue de l’amélioration continue</li>
+</ul>
+</div>
+</div>
+
+{% endblock %}  

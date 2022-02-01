@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CFD | mon compte{% endblock %}
+
+{% block body %}
+<style>
+
+</style>
+
+<div id="moncompte">
+<FONT face="arial">
+    <h4 class="titre-apps">Mon compte</h4>
+    <div class="form-group">
+        <label>Utilisateur</label>
+        <input type="text" name="user" value="Entreprise" disabled />
+    </div>    <div class="form-group">
+        <label>Dénomination </label>
+        <input type="text" name="entreprise" value="{{ app.user.usernames }}" disabled />
+    </div>    
+    <div class="form-group">
+        <label>N° de siret </label>
+        <input type="text" name="entreprise" value="{{ app.user.numSiret }}" disabled />
+    </div>
+    <div class="form-group">
+        <label>Email </label>
+        <input type="text" name="entreprise" value="{{ app.user.email }}" disabled />
+    </div>
+    
+</FONT>
+</div>
+{% endblock %}

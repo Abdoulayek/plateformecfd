@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img_logo {
+    width: 220px;
+    height: auto;
+    margin-top: 20px;
+   
+}
+
+.img_logo_ombline {
+    width: 50px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#contener {
+    width: 80%;
+    min-height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#contener h1 {
+    border-bottom: 2px solid grey;
+    font-size: 1.5em;
+    font-style: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#hautpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#hautpage div {
+    vertical-align: middle;
+}
+
+#hautpage div p {
+    font-size: 2em;
+    vertical-align: middle;
+    margin-top: 50px;
+    color: rgb(4, 133, 133);
+}
+
+footer {
+    clear: both;
+}
+
+.container-fluid {
+    background-color: #001387;
+}
+
+#navbar {
+    background-color: #001387;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#div{
+    margin-top: 20px;
+}
+
+#env{
+    background-color: blue;
+}
+
+.slogan > p{
+    text-align: center;
+    color: black;
+    size: 125px;
+}
+
+#h1entete{
+    font-size: 44px;
+    font-weight: bold;
+    color: #001387; /*Ajout couleur */
+    }
+
+    #h3entete{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: italic;
+    
+        }
+
+.conne{
+    background-color: #001387; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.conne:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.conne:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.decon{
+    background-color: #001387;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    margin: 4px 2px;
+    padding: 15px 32px;
+}
+.decon:hover{
+    background-color: red;
+}
+.aa{
+    color: white;
+    margin-left: 30px;
+    margin-top: 50%;
+}
+  
+.autresf{
+    margin-top: 100px;
+}  
+
+.d11 {
+    float: left;
+  }
+#d1{
+    margin-top: 20px;
+}
+.d12 {
+    float: right;
+    margin-left: 70%;
+    margin-top: -60px;
+    background-color: blanchedalmond;
+  }
+
+.sav{
+    margin-top: 20px;
+    text-align: center;
+}

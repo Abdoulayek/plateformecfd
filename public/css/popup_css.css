@@ -1,0 +1,15 @@
+.popup-hidden {
+    display: none;
+}
+
+.popup-hidden:target {
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    display: block;
+    opacity: 1;
+    position: absolute;
+    top: 500px;
+    z-index: 1;
+}

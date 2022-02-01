@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}CFD_Plateforme{% endblock %}</title>
+
+            {% block stylesheets %}
+                <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.min.css">
+                <link rel="stylesheet" href="/css/footer_css.css">
+                <link rel="stylesheet" href="/css/index_css.css">
+                <link rel="stylesheet" href="/css/security_css.css">
+                <link rel="stylesheet" href="/css/apps_css.css">
+                <link rel="stylesheet" href="/css/recherche_css.css">
+                <link rel="stylesheet" href="/css/resultat_css.css">
+                <link rel="stylesheet" href="/css/popup_css.css">
+                <link rel="stylesheet" href="/css/contact_css.css">
+                {{ encore_entry_link_tags('app') }}
+            {% endblock %}
+
+        {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
+
+
+{% endblock %}
+    </head>
+    <body>
+    
+        <header>
+            <div id="hautpage">
+        <div><img src="/images/cfd.png" alt="logo verif'permis" class="img_logo"></div>
+        <div id="slogan">
+                <h1 id="h1entete">CFD_Plateforme</h1>
+               
+                <h3 id="h3entete"><FONT face="arial">Accompagner n'a jamais été aussi facile !</FONT></h3>
+                 <div class="conne"><a href="{{path('app_login')}}" class="aa">INSCRIPTION/CONNEXION</a></div> 
+                
+        </div>
+            {% if app.user %}
+        
+            <div> <a href="{{ path('app_logout') }}">Déconnexion</a></div>
+            
+        </div>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+        
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ path('apps_verifpermis_home') }}">CFD</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                                <a class="nav-link {{ navactivehome }}" href="{{ path('apps_verifpermis_home') }}">Accueil</a>
+                            </li>
+                            <span class="visually-hidden">(current)</span>
+        
+        
+                            <li class="nav-item">
+                                <a class="nav-link {{ navactivecompte }}" href="{{ path('qualiocompte') }}">Qualiopi</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link {{ navactivecompte }}" href="{{ path('stude') }}">Documents</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link {{ navactivecompte }}" href="{{ path('modele') }}">Nos modèles</a>
+                            </li>
+                            
+                            
+
+                             <li class="nav-item">
+                                <a class="nav-link {{ navactivecompte }}" href="{{ path('apps_verifpermis_moncompte') }}">Mon compte
+                            </a>
+                            </li>
+                            
+                             <li class="nav-item">
+                                <a class="nav-link {{ navactivecompte }}" href="mailto:organismecfd@gmail.com">Nous contacter</a>
+                            </li>
+
+                            
+        
+                        </ul>
+        
+                    </div>
+                </div>
+            </nav>
+            {% else %}
+        
+            
+        </div>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+        
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ path('verifpermis') }}">CFD</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                     
+
+ <div class="collapse navbar-collapse" id="navbarColor01" style="margin-left:1200px">
+                        <ul class="navbar-nav me-auto">
+                         <li class="nav-item">
+                                <a class="nav-link {{ navactivesolutions }}" href="{{ path('contactt')}}">Nous Contacter
+                            </a>
+                            </li>
+                        </ul>
+
+                    <!-- <div class="collapse navbar-collapse" id="navbarColor01" style="margin-left:300px">
+                        <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                                <a class="nav-link {{ navactivebesoins }}" href="{{ path('verifpermis_vosbesoins') }}">Vos besoins</a>
+                            </li>
+                            <span class="visually-hidden">(current)</span>
+        
+                            <li class="nav-item">
+                                <a class="nav-link {{ navactivesolutions }}" href="{{ path('verifpermis_nossolutions') }}">DREETS
+                            </a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link {{ navactivesolutions }}" href="{{ path('qualio')}}">Qualiopi
+                            </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link {{ navactivesolutions }}" href="{{ path('edof')}}">Annuaire Edof
+                            </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link {{ navactivesolutions }}" href="{{ path('pole')}}">Inscription Pole Emploi
+                            </a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link  {{ navactiveapropos }}" href="#">A propos</a>
+                            </li>
+                            <li class="nav-item {{ navactivenouscontacter }}">
+                                <a class="nav-link" href="{{ path('reclamation')}}">Réclamation</a>
+                            </li>
+                            
+                            <li class="nav-item {{ navactivenouscontacter }}">
+                                <a class="nav-link" href="{{ path('contactt')}}">Nous contacter</a>
+                            </li>
+        
+                        </ul>
+        
+                    </div>!-->
+                </div>
+            </nav>
+            {% endif %}
+        
+        </header>  
+    {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}     
+
+
+        <div id="app">  
+        
+    <div id="contener">
+    
+        {% block body %}
+        
+        {% endblock %}
+    </div>
+
+</div>
+
+        <footer>
+          <div id="footer">
+<!-- logo -->
+<div>
+    <h5>CFD</h5>
+    <img src="/images/cfd.png" alt="logo verif'permis" class="img_logo" />
+    <p id="reseau">
+        <a  style="color:white" href="https://www.linkedin.com/company/omblines-com " target="_blank" class="reseau"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a  style="color:white" href="#" class="reseau"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a  style="color:white" href="#" class="reseau"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a  style="color:white" href="#" class="reseau"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </p>
+</div>
+<!-- end logo -->
+<div>
+    <p>28 rue de l'Aven, Cergy</p>
+    <p><a style="color:white;" href="tel:0763314528">07 80 98 26 16</a><p>
+    <p><a style="color:white;" href="mailto:organismecfd@gmail.com">organismecfd@gmail.com</a></p>
+</div>
+<div>
+
+</div>
+</div>
+<div id="signature">
+    <p><img src="/images/cfd.png" alt="logo Ombline company" class="img_logo_ombline" /> <span id="copyfooter" style="color:white"><span>&#174;</span> 2021 All Rights Reserved.</span></p>
+    <P><small style="color:white">Site réalisé par CFD</small></div><p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Verif'permis | nos solutions{% endblock %}
+
+{% block body %}
+<style>
+
+    
+    #im{
+     /* width:1200px;
+      height:400px;*/
+      width: 80%;
+      height: auto;
+    }
+    #img{
+        margin-left:250px;
+    }
+
+    #info-site-detail > h4{
+        margin-bottom:3px;
+    /*text-decoration: underline black;*/ 
+    }
+
+    </style>
+    <div>
+        <h1>DREETS</h1>
+        <h2></h2>
+        <div id="al">
+        <p><img id="im" src="/images/dreet.png"></img></p>
+        <p>
+       Chez Organisme CFD, nous réalisons avec vous les démarches d'obtention du Numéro de Déclaration d'Activité auprès de la DREETS. C’est la première étape pour devenir un formateur ou organisme de formation agréé. Préparez-vous à la formation, nous nous chargeons de l’administratif!
+        </p>
+        <h4 style="text-align:center">Nos missions liées à cette prestation : </h4>
+<ul><li>Accompagnement à la Déclaration à la Dreets</li>
+<li>Création de votre dossier</li>
+<li>Vérification de leur conformité avec les lois en vigueurs</li>
+<li>Validation et suivi de votre dossier</li>
+<li>Suivi de projet jusqu’au dépôt total du dossier à la Dreets</li>
+</ul>
+        </div>
+    </div>
+    <div class="info-site-detail">
+        <button class="saut" style="background-color:#001387; margin-left: 50%"><a href="{{ path('contactt')}}" style="color:white">Demandez un devis</a></button>
+        
+    </div>
+
+   
+{% endblock %}

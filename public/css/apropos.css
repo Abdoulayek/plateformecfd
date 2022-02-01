@@ -1,0 +1,15 @@
+.info_legales div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #eb6864;
+    border-radius: 15px;
+    color: #eb6864;
+    margin-top: 20px;
+}
+
+.content_legale{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

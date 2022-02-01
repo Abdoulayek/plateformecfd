@@ -1,0 +1,18 @@
+{# @var ea \EasyCorp\Bundle\EasyAdminBundle\Context\AdminContext #}
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block content_title 'Welcome to CFD ADMIN' %}
+
+{% block main %}
+    
+<div class="insertion">
+<h1 style="text-align:center">CFD | ADMIN</h1>
+
+<form>
+<label>Insère le document pour l'utilisateur</label> <br />
+<input type="file"></input><br />
+<button style="margin-top:30px">Envoyer au client</button>
+</form>
+</div>
+   
+{% endblock %}

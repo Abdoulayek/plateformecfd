@@ -1,0 +1,30 @@
+.titre-apps {
+    font-size: 40px;
+    color: green;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-add {
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1.5px;
+    width: 40px;
+    cursor: pointer;
+    background-color: #C0C0C0;
+    color: rgb(31, 79, 94);
+    font-weight: bolder;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.btn-add:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1.5px;
+    width: 40px;
+    cursor: pointer;
+    background: rgb(36, 150, 165);
+    color: white;
+}

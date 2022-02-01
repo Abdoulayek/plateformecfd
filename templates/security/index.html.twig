@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} CFD | {{ login_singin }}{% endblock %}
+
+{% block body %}
+<style>
+    
+</style>
+<script>
+document.getElementById('security_numSiret').value=25;
+</script>;
+<div class="security">
+    <div id="login-singin">
+    <div class={{ class_nav_singin }}>
+        <a href="{{path('security_singin')}}" class="link-security">Inscription</a>
+        </div>
+        <div class={{ class_nav_login }}>
+        <a href="{{path('app_login')}}" class="link-security">Connexion</a>
+        </div>
+        
+    </div>
+    {% if warning != "" %}
+    <div class="form-group" id="warning"><i class="fas fa-exclamation" style="margin: 15px;"></i><span style="margin: 10px;">{{ warning }}</span></div>
+{% endif %}    
+{% if success != "" %}
+<div class="form-group" id="success"><i class="fas fa-check-circle" style="margin: 15px;"></i><span style="margin: 10px;">{{ success }}</span></div>
+{% endif %}
+
+
+    <!-- FranceConnect -->
+    <div id="fc">
+    <h4>Utilisez FranceConnect pour vous connecter ou créer un compte</h4>
+    <p id="fc-Texte">FranceConnect est la solution proposée par l’État pour sécuriser et simplifier la connexion à vos services en ligne</p>
+    <a href="{{path('security_fc')}}" ><img id="btn-france-connect" src="images/franceconnect-bouton.jpg"alt="FranceConnect" /></a>
+    <!-- <input type="submit" value="S'identifier avec France Connect" id="btn-france-connect" /> -->
+    <p><a id='fc-lien' href="https://franceconnect.gouv.fr/">Qu’est-ce que FranceConnect ?</a></p>
+    </div>
+    <!-- OU -->
+    <div id="fc-ou">OU</div>
+
+    {% if login_singin == "connexion" %}
+        <!-- Connexion -->
+        <div id="login">
+
+
+<!-- form -->
+<form method="post">
+    {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+        </div>
+    {% endif %}
+<div class="form-group">
+    <label for="inputEmail">Email</label>
+    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+</div>
+<div class="form-group">
+    <label for="inputPassword">Mot de passe</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+</div>
+<div class="form-group">
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+</div>
+
+    {#
+        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+        See https://symfony.com/doc/current/security/remember_me.html
+        #}
+
+        <div>
+            
+        <center><input type="checkbox" name="_remember_me"> <span>Se souvenir de moi</span></center>
+            
+        </div>
+    
+<div class="form-group">
+    <button class="btn btn-lg btn-primary" type="submit">
+    <i class="fas fa-sign-in-alt"></i> Connexion
+    </button>
+</div>
+
+<div class="form-group">
+    <center><a href="{{path('app_forgot_password_request')}}">Mot de passe oublié ?</a></center>
+</div>
+</form><!-- endform -->
+
+        </div>
+            <!-- end connexion-->    
+            {% else %}
+<!-- Inscription -->
+        <div id="singin">
+        {{ form_start(formSingin) }}
+
+                <div class="form-group">
+                    {{ form_row(formSingin.numSiret, {'label' : 'N° de siret', 'attr' :{ 'size':20, 'maxlength':14, 'minlength':9}}) }}
+                </div>
+
+                <div class="form-group">
+                    {{ form_row(formSingin.email, {'label' : 'Email'}) }}
+                </div>        
+                <div class="form-group">
+                     {{ form_row(formSingin.password, {'label' : 'Mot de passe'}) }}
+                </div>
+                <div class="form-group">
+                    {{ form_row(formSingin.confpassword, {'label' : 'Confirmer votre mot de passe'}) }}
+                </div>
+    <div class="form-group"><button type="submit" name="inscription" class="btn"><i class="fas fa-sign-in-alt"></i> Inscription</button></div>
+    {{ form_end(formSingin) }}
+    </div>
+        </div>
+    {% endif %}
+
+    </div>
+
+{% endblock %}

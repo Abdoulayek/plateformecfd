@@ -1,0 +1,50 @@
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin : auto;
+    margin-top: 100px;
+    padding: 30px;
+    color: #001387;
+}
+#mentions{
+ font-size: 10px;
+}
+
+#footer div {
+    width: 30%;
+    padding:  10px;
+    text-align: center;
+}
+#signature{
+    color: white;
+    padding:  5px;
+    text-align: center;
+    border-top:  1px solid #001387;
+    width: 60%;
+    margin:  auto;
+
+}
+#copyfooter{
+    font-size: 10px;
+}
+#signature small{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#reseau{
+    padding-top:  20px;
+}
+.reseau{
+    margin : 10px;
+}
+.reseau a{
+    width: 50px;
+}
+
+footer {
+    clear: both;
+    background-color: #001387;
+}

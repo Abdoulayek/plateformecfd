@@ -1,0 +1,207 @@
+.security {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    border: 2px solid rgb(28, 78, 94);
+    background: rgb(239, 240, 240);
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#login-singin {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#link-login-singin,
+#link-login-singin:hover {
+    text-decoration: none;
+    color: rgb(196, 189, 189);
+}
+
+#link-login-singin-active,
+#link-login-singin-active:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.choix-login-singin,
+.choix-login-singin-active {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.choix-login-singin-active {
+    background-color: rgb(29, 119, 126);
+    border: rgb(36, 150, 165) 2px solid;
+}
+
+.choix-login-singin {
+    background-color: grey;
+    border: grey 2px solid;
+}
+
+#fc {
+    margin: auto;
+    text-align: center;
+}
+
+#btn-france-connect {
+    background-image: url(images/franceconnect-bouton-hover.png);
+    width: 230px;
+    height: 60px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    margin: auto;
+}
+
+#btn-france-connect:hover {
+    background: url(images/franceconnect-bouton-hover.png);
+    width: 230px;
+    height: 60px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+#fc-Texte {
+    margin: auto;
+    padding: 40px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin-top: 0;
+    width: 410px;
+}
+
+#fc-lien {
+    margin-top: 8px;
+    min-width: 13px;
+    text-decoration: italic;
+    color: rgb(59, 114, 177);
+}
+
+#fc-ou {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 260px;
+    height: 60px;
+    text-align: center;
+    background-color: #C0C0C0;
+    color: rgb(31, 79, 94);
+    font-style: bold;
+    font-size: 1.5em;
+    margin: auto;
+    border: rgb(29, 119, 126) solid 3px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(36, 150, 165);
+    color: white;
+}
+
+.form-group {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2px;
+    font-size: 1.05em;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    text-align: left;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.form-group li {
+    color: red;
+}
+
+.choix-login-singin,
+.choix-login-singin-active {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 50%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.choix-login-singin-active {
+    background-color: rgb(29, 119, 126);
+    color: white;
+    border: rgb(36, 150, 165) 2px solid;
+}
+
+.choix-login-singin {
+    background-color: grey;
+    color: rgb(196, 189, 189);
+    border: grey 2px solid;
+}
+
+#warning {
+    font-size: 1.5em;
+    font-style: bold;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 3px;
+    margin-bottom: 20px;
+    background: rgb(218, 204, 204);
+}
+
+#success {
+    font-size: 1.5em;
+    font-style: bold;
+    color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid green;
+    border-radius: 15px;
+    padding: 3px;
+    margin-bottom: 20px;
+    background: rgb(185, 216, 184);
+}
+
+.link-security {
+    text-decoration: none;
+    color: black;
+}
+
+.link-security:hover {
+    text-decoration: none;
+    color: white;
+}
